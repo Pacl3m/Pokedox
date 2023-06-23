@@ -1,36 +1,59 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.pokedex {
-    min-height: 50vh;
+.showCard {
+    max-width: 80%;
+    max-height: 80%;
+
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    /* opacity: 0; wenn auf 1 ist es sichtbar*/ 
+    transition: opacity 250ms ease;
+}
+
+
+.pokemonInfoTop {
+    height: 40vh;
     background-color: rgb(252, 108, 109);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 
 .imageContainer {
+    display: flex;
+    justify-content: center;
+}
 
+
+#pokemonImage {
+    width: 50%;
 }
 
 
 h1 {
-    margin-top: 0;
+    margin-top: 32px;
+    margin-bottom: 0;
     text-align: center;
-    font-size: 80px;
-} 
+    font-size: 48px;
+}
 
 
-.pokemonInfo {
+.pokemonInfoButton {
     background-color: white;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    min-height: 50vh;
-    margin-top: -105px;
+    height: 40vh;
+    margin-top: -24px;
+    border-radius: 25px;
 }
